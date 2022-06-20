@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5rem;
+    color: white;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+body {
+    background-color: #141519;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.mainCntnr {
+    background: linear-gradient(90deg, rgba(30,37,47,1) 0%, rgba(23,30,40,1) 35%);
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10%;
+}
+#starIcon {
+    width: 15px;
+    height: 15px;
+    align-self: flex-start;
+    margin: 1.5rem 1.5rem;
+    background-color: #223039;
+    border-radius: 50%;
+    padding: 10px;
+}
+h1 {
+    color: #FFEFFF;
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+
+.feedbackP {
+    color: #505662;
+    font-size: 15px;
+    margin: 0 1.5rem;
+}
+.ratingSelector {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem -0.5rem;
+    width: 100%;
+
+}
+.ratingBtn {
+    background-color: #272E38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 50%;
+    border-color: transparent;
+    color: #808893;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.ratingBtn:hover {
+    background-color: #81899C;
+    color: #272e38;
+}
+.ratingBtn:focus {
+    color: white;
+    background-color: #F97918;
+}
+
+#submit {
+    border-radius: 28px;
+    margin: 0.2rem 1rem;
+    padding: 1rem;
+    background-color: #FC7613;
+    border-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-family: 'Overpass';
+}
+#submit:hover {
+    background-color: white;
+    color: #FC7613;
+}
+#thankState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(90deg, rgba(30,37,47,1) 0%, rgba(23,30,40,1) 35%);
+    border-radius: 10%;
+}
+.thankSpan {
+    color: #c37334;
+    border-radius: 28px;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    background-color: #262f38;
+}
+h2 {
+    color: white;
+}
+.thankImg {
+    align-self: center;
+    margin: 1.5rem;
+}
