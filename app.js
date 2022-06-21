@@ -20,7 +20,7 @@ for(let button of ratingBtn){
 
 submitBtn.addEventListener('click', ()=>{
     const newAlert = document.createElement('span');
-    newAlert.innerHTML = '<b>Please select a rating level to submit!</b>';
+    newAlert.innerHTML = '<b>Please select a rating level to submit your response!</b>';
     newAlert.classList.add('warning');
     feedbackP.append(newAlert);
 }, {once: true});
