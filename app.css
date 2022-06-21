@@ -75,7 +75,10 @@ h1 {
     color: white;
     background-color: #F97918;
 }
-
+.warning {
+    color: red;
+    display: inline-block;
+}
 #submit {
     border-radius: 28px;
     margin: 0.2rem 1rem;
