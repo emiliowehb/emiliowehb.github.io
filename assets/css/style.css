@@ -452,6 +452,7 @@ article::after {
 
 .reasons div h1 {
     font-size: 32px;
+    font-weight: bold;
     color: #1A1818;
     margin-bottom: 10px;
 }
@@ -1039,8 +1040,8 @@ article::after {
 
 .materials-card:hover .border_left,
 .materials-card:hover .border_right {
-    animation: border_left 1s;
-    animation: border_right 1s;
+    animation: border_left 1s forwards;
+    animation: border_right 1s forwards;
 }
 
 .border_left,
@@ -1078,7 +1079,7 @@ article::after {
     }
 
     100% {
-        height: 235px;
+        height: 234px;
     }
 }
 
@@ -1088,7 +1089,7 @@ article::after {
     }
 
     100% {
-        height: 235px;
+        height: 234px;
     }
 }
 
