@@ -203,6 +203,7 @@ a {
 
 .header-info h1>:nth-child(2) {
     color: #BA9950;
+    font-weight: bold;
 }
 
 .header-info p {
