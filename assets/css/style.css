@@ -94,7 +94,9 @@ a {
 }
 
 
-
+.dropdown .dropdown-menu{
+    width: 100px !important;
+}
 
 .nav-item>:last-child span {
     display: none;
@@ -125,7 +127,6 @@ a {
 .nav-item .active {
     color: #BA9950 !important;
 }
-
 .dropdown-item:hover{
     background-color: transparent;  
 }
@@ -135,7 +136,6 @@ a {
 [data-lang="EN"]{
     font-weight: bold;
 }
-
 @keyframes nav-item-animation {
     0% {
         width: 0;
@@ -154,7 +154,6 @@ a {
         width: 90px;
     }
 }
-
 @media(max-width:992px){
     .logo{
         display: none;
@@ -185,7 +184,6 @@ a {
         height: 100vh;
     }
 }
-
 /* ========================================= End Navbar =========================================*/
 
 /*  ========================================= Start Header ========================================= */
@@ -194,10 +192,6 @@ a {
     width: 100%;
     position: relative;
     margin-top: 80px;
-}
-
-.dropdown .dropdown-menu{
-    width: 100px !important;
 }
 
 .bg {
@@ -248,7 +242,6 @@ a {
 
 .header-info h1>:nth-child(2) {
     color: #BA9950;
-    font-weight: bold;
 }
 
 .header-info p {
@@ -497,7 +490,6 @@ article::after {
 
 .reasons div h1 {
     font-size: 32px;
-    font-weight: bold;
     color: #1A1818;
     margin-bottom: 10px;
 }
@@ -1085,8 +1077,8 @@ article::after {
 
 .materials-card:hover .border_left,
 .materials-card:hover .border_right {
-    animation: border_left 1s forwards;
-    animation: border_right 1s forwards;
+    animation: border_left 1s;
+    animation: border_right 1s;
 }
 
 .border_left,
@@ -1124,7 +1116,7 @@ article::after {
     }
 
     100% {
-        height: 234px;
+        height: 235px;
     }
 }
 
@@ -1134,7 +1126,7 @@ article::after {
     }
 
     100% {
-        height: 234px;
+        height: 235px;
     }
 }
 
@@ -1181,7 +1173,10 @@ article::after {
     position: relative;
     overflow: hidden;
 }
-
+.pricing-cards{
+    display: flex;
+    align-items: center;
+}
 .pricing::after {
     content: "";
     width: 535px;
@@ -1357,7 +1352,117 @@ article::after {
     border: 1px solid #BA9950;
     text-transform: uppercase;
 }
-
+@media (max-width:1200px) {
+    .price-element,.recommended{
+        width: 350px;
+    }
+    .recommended{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .price-type h1,.month h1>:first-child{
+        font-size: 25px;
+        letter-spacing: 3.35px;
+    }
+    .month h1 {
+        font-size: 25px;
+    }
+    .last-type-of {
+        width: 265px !important;
+    }
+    .recommended .price-type,.price-element .price-type{
+        height: 130px;
+    }
+    .pricing ul li p,.pricing a, .recommended a{
+        font-size: 14px;
+    }
+    .recommended a{
+        width: 140px;
+    }
+    .price-element{
+        height: 540px;
+    }
+.recommended{
+    min-height: unset;
+    height: 600px;
+}
+}
+@media (max-width:992px) {
+    .pricing ul{
+        padding:0 0.5rem;
+    }
+    .pricing ul li p, .pricing a, .recommended a {
+        font-size: 12px;
+    }
+    .month h1,.price-type h1, .month h1>:first-child {
+        font-size: 20px;
+    }
+    .last-type-of,.month div {
+        width: 200px !important;
+        font-size: 11px;
+    }
+    .month div{
+        height: 30px;
+    }
+    .recommended::after {
+    width: 155px;
+    font-size: 12px;
+    }
+    .recommended{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .price-element{
+        height: 470px;
+    }
+.recommended{
+    min-height: unset;
+    height: 530px;
+}
+.recommended .price-type, .price-element .price-type{
+    height: 100px;
+}
+.month h1, .price-type h1, .month h1>:first-child{
+    font-size: 15px;
+}
+.last-price-element{
+    height: 485px;
+}
+}
+@media (max-width:768px) {
+    .pricing-cards{
+        flex-direction: column;
+    }
+    .month h1, .price-type h1, .month h1>:first-child {
+        font-size: 18px;
+    }
+    .price-type p {
+    font-size: 20px;
+    }
+    .last-type-of, .month div {
+        width: 260px;
+        font-size: 14px;
+        height: 40px;
+    }
+    .pricing ul li p, .pricing a, .recommended a{
+        font-size: 14px;
+    }
+    .pricing ul{
+        padding: 0 1rem;
+    }
+    .price-element {
+        height: 500px;
+    }
+    .last-price-element{
+        height: 505px;
+    }
+    .recommended{
+        height: 560px;
+    }
+    .last-type-of, .month div{
+        width: 250px !important;
+    }
+}
 /* ========================================= End Pricing Section ========================================= */
 
 /*  ========================================= Start About Section =========================================   */
@@ -1531,19 +1636,15 @@ footer ul li {
 .footer-links ul li {
     margin-left: 25px;
 }
-
-
-.footer-social-media-links ul li a:hover {
+.footer-social-media-links ul li a:hover{
     border: 1px solid white;
     background-color: #BA9950;
     transition: 0.4s;
 }
-
-.footer-social-media-links ul li a:hover i {
+.footer-social-media-links ul li a:hover i{
     color: white;
 }
-
-.footer-social-media-links ul li a i {
+.footer-social-media-links ul li a i{
     color: black;
 }
 

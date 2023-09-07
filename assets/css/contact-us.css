@@ -20,7 +20,9 @@ body {
 a {
     text-decoration: none;
 }
-
+ul li{
+    list-style: none;
+}
 :root {
     --page-background: #F7F7F7;
     --main-btn-bg-color: #BA9950;
@@ -29,7 +31,10 @@ a {
     --btn-border: #BA9950;
     --btn-bg-hover-color: #F7F7F7;
 }
-
+button{
+    outline: none;
+    border: none;
+}
 /* ========================================= End Global Rules ========================================= */
 
 /* ========================================= Start Navbar =========================================*/
@@ -60,12 +65,14 @@ a {
     border: 1px solid var(--btn-border);
     transition: 0.4s;
 }
-.btn-hover:hover{   
+
+.btn-hover:hover {
     background-color: var(--btn-bg-hover-color) !important;
     color: var(--btn-hover-color) !important;
     border: 1px solid var(--btn-border) !important;
     transition: 0.4s !important;
 }
+
 .dropdown-toggle::after {
     display: none;
 }
@@ -94,7 +101,7 @@ a {
 }
 
 
-.dropdown .dropdown-menu{
+.dropdown .dropdown-menu {
     width: 100px !important;
 }
 
@@ -127,15 +134,19 @@ a {
 .nav-item .active {
     color: #BA9950 !important;
 }
-.dropdown-item:hover{
-    background-color: transparent;  
+
+.dropdown-item:hover {
+    background-color: transparent;
 }
-.dropdown-menu[data-bs-popper]{
+
+.dropdown-menu[data-bs-popper] {
     left: -40%;
 }
-[data-lang="EN"]{
+
+[data-lang="EN"] {
     font-weight: bold;
 }
+
 @keyframes nav-item-animation {
     0% {
         width: 0;
@@ -154,256 +165,184 @@ a {
         width: 90px;
     }
 }
-@media(max-width:992px){
-    .logo{
+
+@media(max-width:992px) {
+    .logo {
         display: none;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         margin: 0 auto;
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         margin-top: 30px;
         background-color: #F7F7F7;
         border: 1px solid #BA9950;
         padding-top: 40px;
         box-shadow: 0px 3px 6px #00000029;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .Join-us-btn{
+
+    .Join-us-btn {
         margin: 39px auto;
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         transition: 0s;
     }
-    .nav-container-bg{
-        background-color:#FFFFFF;
+
+    .nav-container-bg {
+        background-color: #FFFFFF;
         height: 100vh;
     }
 }
+
 /* ========================================= End Navbar =========================================*/
 
-/* ========================================= Start Header ========================================= */
-/* header{
-    height: 100vh;
-} */
-.card-img {
-    margin-top: 50px;
-    position: relative;
-}
-
-.card-img img {
+/* ========================================= Start Contact us header ========================================= */
+header{
     width: 100%;
-}
-.triangle{
-    position: absolute;
-    right: 60px;
-    max-width: 473px;
-    bottom: 95px;
-}
-
-@media (max-width:1200px) {
-    .triangle {
-        right: 0px;
-        bottom: 30px;
-    }
-}
-@media (max-width:992px) {
-    .triangle {
-        right: -50px;
-        bottom: -25px;
-    }
-}
-@media (max-width:768px) {
-    .triangle {
-        right: -25px;
-        bottom: -30px;
-        max-width: 325px;
-        font-size: 13px;
-    }
-}
-@media (max-width:576px) {
-    .triangle {
-        right: 0px;
-        left: 0;
-        bottom: -210px;
-        max-width: max-content;
-        font-size: 18px;
-    }
-}
-/* ========================================= End Header ========================================= */
-
-/* ========================================= Start learn section ========================================= */
-.learn{
-    margin-top: 48px;
-    background-color: #3E2A13;
-    padding: 25px 36px 69px 36px;
-    overflow: hidden;
-}
-.learn::before{
-    content: "";
-    width: 217px;
-    height: 508px;
-    background-image: url(../images/Shapes.png);
-    background-size: contain;
-    position: absolute;
-    right: 0px;
-    top: 700px;
-    z-index: -9999;
-    background-repeat: no-repeat;
-}
-.learn-title{
-    color: white;
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-}
-.lesson{
-font-size: 18px;
-color: #BA9950;
-margin-top: 0;
-margin-bottom: 21px;
-}
-.lesson-info{
-font-size: 15px;
-color: #F7F7F7;
-max-width: 315px;
-}
-.reasons div{
-    counter-increment: count;
+    height: 200px;
+    background-color: #BA9950;
     position: relative;
-}
-.reasons div::before{
-    content: counter(count);
-    color: white;
-    position: absolute;
-    top: 0%;
-    font-size: 55px;
-    font-weight: bold;
-    color: #BA9950;
-}
-@media(max-width:1200px){
-    .learn::before{
-        top: 500px;
-    }
-}
-@media(max-width:992px){
-    .learn::before{
-        top: 400px;
-    }
-}
-@media (max-width:768px) {
-    .reasons div{
-        margin-bottom: 25px;
-    }
-    .learn::before{
-        top: 350px;
-    }
-}
-@media (max-width:576px) {
-    .lesson-info{
-        max-width: max-content;
-    }
-    .learn{
-        padding: 15px;
-        margin-top: 250px;
-    }
-    .learn::before{
-        top: 490px;
-    }
-}
-/* ========================================= End learn section ========================================= */
-
-/* ========================================= Start article ========================================= */
-    
-article{
-    margin-top: 44px;
-}
-.article-title{
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-top: 50px;
 }
-.article-title h1{
+header::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/contact-us-header-Bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+.header-title>:first-child{
     font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 16px; 
-    color: #1A1818;
+    color: #F7F7F7;
+    margin-bottom: 0;
+    max-height: 73px;   
 }
-.article-title p{
+.header-title>:nth-child(2){
     font-size: 18px;
-    color: #727272;
-    max-width: 600px;
+    color: #F7F7F7;
+    margin-top: 0;
+    margin-left: 8px;
 }
-.article-cards{
-    margin-top: 46px;
+@media (max-width:576px) {
+    .header-title>:first-child{
+        font-size: 35px;
+        max-height: 45px;   
+    }
+    .header-title>:nth-child(2){
+        font-size: 14px;
+        margin-left: 4px;
+    }
+}
+/* ========================================= End Contact us header ========================================= */
+
+/* ========================================= Start Contact us cards ========================================= */
+.cards{
+    margin-top: 50px;
 }
 .card{
-    background-color: #FFFFFF;
     width: 400px;
-    height: 350px;
-    padding: 0;
+    height: 200px;
+    background-color: #FFFFFF;
     box-shadow: 0px 10px 25px #00000029;
     border: 1px solid #BA9950;
     border-radius: 0;
-    margin-bottom: 50px;
+    padding: 36px 68px 43px 68px;
+    margin-bottom: 47px;
 }
-.card>:first-child img{
-    width: 100%;
-}
-.card>:nth-child(2){    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card h1{
+    font-size: 26px;
+    font-weight: bold;
+    color: #1A1818;
     text-align: center;
-    padding: 35px 50px 33px 50px;
 }
-.card>:nth-child(2)>:first-child{
+.card p{
+font-size: 15px;
+color: #727272;
+text-align: center;
+margin-top: 8px;
+}
+.call-us ul,.email-us ul{
+    padding-left: 0;
+    margin-top: 8px;
+}
+.email-us ul li{
     color: #BA9950;
-    font-size:  18px;
-    margin-bottom: 17px;
 }
-.card>:nth-child(2)>:nth-child(2){
+.call-us,.email-us{
+    font-size: 15px;
+    text-align: center;
+}
+@media (max-width:576px) {
+    .card{
+        width: 350px;
+        padding: 36px 50px 43px 50px;
+    }
+    .card h1{
+        font-size: 20px;
+    }
+}
+/* ========================================= End Contact us cards ========================================= */
+
+/* ========================================= Start Contact us form ========================================= */
+.contact-us-title{
+    margin-bottom: 36px;
+}
+.contact-us-title>:first-child{
+font-size: 26px;
+font-weight: bold;
+}
+.contact-us-title>:nth-child(2){
+    font-size: 26px;
+    font-weight: bold;
+}
+.contact-us-title>:nth-child(3){
     font-size: 15px;
     color: #727272;
 }
-@media (max-width:992px){
-    .article-title h1{
-        font-size: 35px;
-    }
-    .article-title p{
-        font-size: 16px;
-    }
-} 
-@media (max-width:768px){
-    .article-title h1{
-        font-size: 28px;
-    }
-    .article-title p{
-        font-size: 14px;
-    }
-} 
+.form-control {
+    height: 50px;
+    border-radius: 0px;
+    border: 1px solid #DBD5C9;
+}
+.submit{
+    width: 140px;
+    height: 39px;
+    background-color: #BA9950;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control:focus {
+    outline: none !important;
+    border: 1px solid #DBD5C9;
+    box-shadow: none !important;
+}
+textarea{
+    min-height: 140px !important;
+}
 @media (max-width:576px) {
-    article {
-        margin-top: 100px;
-    }
-    .card{
-        width: 100%;
-    }
-    .article-title h1{
-        font-size: 20px;
-    }
-    .article-title p{
-        font-size: 14px;
+    .contact-us-title>:nth-child(2) {
+    font-size: 19px;
     }
 }
-/* ========================================= Start article ========================================= */
+/* ========================================= End Contact us form ========================================= */
 
 /* ========================================= Start Footer ========================================= */
 footer {
